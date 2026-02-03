@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('../fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('../fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('../fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('../fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*Satoshi (WOFF2)*/
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13,13,13);
+    color: white;
+}
+.addToCartLong {
+    border: 1px solid white;
+    padding: 1%;
+    background-color: rgb(13,13,13);
+    color: rgb(255, 255, 255);
+    font-family: AvenirNext-Light;
+    font-weight: 600;
+    width: 30vw;
+    height: 3vw;
+    font-size: clamp(3px, 1.5vw, 20px);
+    border-radius: 3px;
+    margin-top: 5%;
+}
+
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linksInMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+
+.linkM {
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    font-family: Satoshi-Black;
+    color: white;
+    margin-left: 3%;
+}
+#shadow{
+    background-color: rgba(255, 255, 255, 0.7);
+    height:1vh;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5%;
+}
+#Allpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    margin:10%;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    align-content: 3%;
+}
+.pInText{
+    
+    font-family: AvenirNext-Medium;
+    font-size: clamp(8px, 5vw, 20px);
+}
+h1{
+    margin: 0;
+}
+/*footer*/
+#shadow {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 0.5vh;
+}
+#Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 1%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: AvenirNext-Light;
+    margin: 0% 10%;
+    white-space: nowrap;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.linksInFooter {
+    text-decoration: none;
+    color: white;
+}
+#glasses{
+    border-radius: 5px;
+}
+.smallBtns {
+    border: 1px solid white;
+    padding: 1%;
+    background-color: rgb(13,13,13);
+    color: rgb(255, 255, 255);
+    font-family: AvenirNext-Light;
+    font-weight: 600;
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: clamp(8px, 5vw, 20px);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+    padding: 12px 7px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-family: AvenirNext-Medium;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+}
+
+#notification.show {
+    opacity: 1;
+}
+
+#colors{
+    display: flex;
+    flex-direction: row ;
+    gap: 5%;
+}
+#blue{
+    width: 1vw;
+    height: 1vw;
+    background-color:rgb(165, 188, 253);
+    border-radius: 50%;
+}
+#green{
+    width: 1vw;
+    height: 1vw;
+    background-color:rgb(61, 100, 61);
+    border-radius: 50%;
+}
+.smallBtns:hover,
+.addToCartLong:hover {
+    box-shadow: 0 0 10px white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#recommendRow {
+    display: flex;
+    gap: 2%;
+    overflow: hidden;
+    padding-bottom: 2%;
+    scroll-behavior: smooth;
+}
+
+.recommendItem img {
+    border-radius: 7px;
+    width: 20vw;
+}
+
+h2 {
+    font-family: Satoshi-Black;
+    margin-left: 13vw;
+}
