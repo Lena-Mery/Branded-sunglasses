@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>RAYLANE</title>
+    <link href="RF(8)StyleSheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <a id="pInMenu" href="../MainHTML.html" style="padding:2vh; text-decoration: none;">RAYLANE</a>
+            <div id="linksInMenu">
+                <a class="linkM" href="../Women's glasses.html">WOMEN'S SUNGLASSES</a>
+                <a class="linkM" href="../Men's glasses.html">MEN'S SUNGLASSES</a>
+                <a class="linkMm" href="../Cart.html">
+                    <img src="../photos/telega.png" alt="cart"
+                         style="width: 3%; min-width:30px;" />
+                </a>
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </header>
+    <main>
+        <div id="Allpage">
+
+            <button id="L" class="smallBtns">
+                <
+            </button>
+
+            <img src="../photos/10.jpg" alt="glasses" id="glasses">
+            <button id="R" class="smallBtns">></button>
+            <div id="text">
+
+                <h1 id="name">Roberi & Fraud</h1>
+                <p id="price" class="pInText">$220.00</p>
+                <div id="btns">
+
+                    <button id="-" class="smallBtns">-</button>
+                    <p id="gCount"> 1 </p>
+                    <button id="+" class="smallBtns">+</button>
+                </div>
+
+                <button onclick="addToCart()" class="addToCartLong">ADD TO CART | $220.00</button><br />
+
+                <p class="pInText">
+                    Sharp, narrow black frames radiating confident<br>
+                    high-fashion energy. Bold yet controlled,<br>
+                    expressive without excess.
+
+                </p>
+                <div id="colors">
+                    <a id="purple" href="RF(8).html"></a>
+                    <a id="black" href="RFblack(8).html"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="recommend">
+            <h2>Other Options</h2>
+            <div id="recommendRow"></div>
+        </div>
+
+    </main>
+
+    <div id="notification" class="hidden"></div>
+
+    <footer>
+        <div id="shadow"></div>
+        <div id="Info">
+            <div class="columns">
+                <p>EXPLORE<br>_____________</p>
+                <a href="../Choice.html" class="linksInFooter">Shop It All</a>
+                <a href="../MainHTML.html" class="linksInFooter">It's About Us</a>
+            </div>
+
+            <div class="columns">
+                <p>FOLLOW US<br>_________________</p>
+                <div id="icons">
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+                             style="width: 2vw; margin-right: 3vh; vertical-align: middle;" />
+                    </a>
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png"
+                             style="width: 2vw; vertical-align: middle;" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="columns">
+                <p>SUPPORT<br>_____________</p>
+                <a href="../Contact.html" class="linksInFooter">Contact</a>
+                <a href="../Terms.html" class="linksInFooter">Terms</a>
+                <a href="../Privacy.html" class="linksInFooter">Privacy</a>
+                <a href="../Returns.html" class="linksInFooter">Returns</a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script>
+        const btnR = document.getElementById("R");
+        const btnL = document.getElementById("L");
+        let img = document.getElementById("glasses");
+        let count = 0;
+        //ССЫЛКИ ../
+        let arr = ["../photos/10.jpg", "../photos/10-01.jpg", "../photos/10-02.jpg", "../photos/10-03.jpg"];
+
+        btnR.addEventListener("click", function ChangeImageR() {
+            count++;
+            if (count >= arr.length) {
+                count = 0;
+            }
+            img.src = arr[count];
+        });
+
+        btnL.addEventListener("click", function ChangeImageL() {
+            count--;
+            if (count < 0) {
+                count = arr.length - 1;
+            }
+            img.src = arr[count];
+        });
+
+
+
+        const add = document.getElementById("+");
+        const sub = document.getElementById("-");
+        let glassesCount = 1;
+        add.addEventListener("click", function () {
+            ++glassesCount;
+            document.getElementById("gCount").innerHTML = glassesCount;
+        });
+        sub.addEventListener("click", function () {
+            if (glassesCount > 1) {
+                --glassesCount;
+                document.getElementById("gCount").innerHTML = glassesCount;
+            }
+
+        });
+
+
+
+        const recommendContainer = document.getElementById("recommendRow");
+        let recImages = [
+            { img: "../photos/1.jpg", link: "kapinSnakeSilver(slide2).html" },
+            { img: "../photos/3-008.jpg", link: "OuttaLoveRed(3).html" },
+            { img: "../photos/5-05.jpg", link: "BVblack(6).html" },
+            { img: "../photos/first.jpg", link: "shablon.html" },
+            { img: "../photos/2.jpg", link: "GM(slide3).html" },
+            { img: "../photos/1-003.jpg", link: "kapinSnakeSilver(slide2).html" },
+            { img: "../photos/3-001.jpg", link: "OuttaLoveBrown(3).html" },
+            { img: "../photos/4-03.jpg", link: "LoeweBrown(4).html" },
+            { img: "../photos/7-01.jpg", link: "KHAITES.html" },
+            { img: "../photos/10.jpg", link: "RF(8).html" },
+            { img: "../photos/12-02.jpg", link: "RFblackPINK(8).html" },
+            { img: "../photos/3-01-02.jpg", link: "BonnieClyde(5).html" },
+            { img: "../photos/7.jpg", link: "KHAITE.html" },
+            { img: "../photos/8.jpg", link: "PRADA.html" },
+            { img: "../photos/6.jpg", link: "MIUgreen(7).html" },
+            { img: "../photos/3-01.jpg", link: "BonnieClydeRed(5).html" },
+        ];
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5);
+        }
+
+        let randomImages = shuffle(recImages).slice(0, 5);
+        randomImages = randomImages.concat(randomImages);
+
+        randomImages.forEach(itemData => {
+            const item = document.createElement("div");
+            item.className = "recommendItem";
+
+            if (itemData.link) {
+                // если есть ссылка → оборачиваем картинку в <a>
+                item.innerHTML = `<a href="${itemData.link}"><img src="${itemData.img}"></a>`;
+            } else {
+                item.innerHTML = `<img src="${itemData.img}">`;
+            }
+            recommendContainer.appendChild(item);
+        });
+
+        let scrollSpeed = 1;
+        setInterval(() => {
+            recommendContainer.scrollLeft += scrollSpeed;
+            if (recommendContainer.scrollLeft >= recommendContainer.scrollWidth / 2) {
+                recommendContainer.scrollLeft = 0;
+            }
+        }, 25);
+    </script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
