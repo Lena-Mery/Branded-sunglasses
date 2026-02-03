@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>RAYLANE</title>
+    <link href="MainStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div id="menu">
+            <a id="pInMenu" href="MainHTML.html" style="padding:2vh; text-decoration: none;">RAYLANE</a>
+            <div id="linksInMenu">
+                <a class="linkM" href="Women's glasses.html">WOMEN'S SUNGLASSES</a>
+                <a class="linkM" href="Men's glasses.html">MEN'S SUNGLASSES</a>
+                <a class="linkMm" href="Cart.html"><img src="photos/telega.png" alt="cart"
+                        style="width: 3%; min-width:30px;" /></a>
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </header>
+    <!--header end-->
+
+    <!--main start-->
+    <main>
+        <div id="cover">
+            <video class="background" autoplay muted loop playsinline>
+                <source src="photos/mainvideo.mp4" type="video/mp4" />
+            </video>
+            <!--<img src="photos/glassesBLACK.jpg" alt="sunglasses" style="width:100%;">-->
+            <h1>RAYLANE</h1>
+            <p id="pInCover">See the world in style.</p>
+        </div>
+
+        <div id="Page2">
+            <img src="photos/Background4X.jpg" alt="gray background" style="width:100%;">
+            <h2>RAYLANE — where style<br />meets modern life.</h2>
+            <p id="pInPage2">
+                Top brands and on-trend eyewear to express
+                <br />yourself every day. <span class="boldWorldInText">With Raylane</span>, seeing the
+                <br />world means being bold, vibrant, and
+                <br />unapologetically you.
+            </p>
+        </div>
+
+        <div id="imagesFeed">
+            <img class="imgsInFeed" src="photos/baner2.jpg" alt="girl in sunglasses" />
+            <img class="imgsInFeed" src="photos/baner1.jpg" alt="girl in sunglasses" />
+            <img class="imgsInFeed" src="photos/baner3.jpg" alt="girl in sunglasses" />
+        </div>
+
+        <div id="AboutUs">
+            <img src="photos/Background4X.jpg" alt="gray background" style="width:100%;">
+            <h3>
+                About RAYLANE
+            </h3>
+            <p id="pInAboutUs">
+                RAYLANE is an online destination for those who appreciate<br />
+                quality, design, and authenticity. We curate a selection of<br />
+                premium eyewear from trusted global brands — combining timeless<br />
+                classics and modern icons in one clean, effortless space.<br /><br />
+
+                Our mission is simple: to make finding your perfect pair of<br />
+                sunglasses easy, inspiring, and reliable. Every model in our<br />
+                collection is <span class="boldWorldInText">100% original</span>, sourced directly from<br />
+                authorized distributors and official partners.<br /><br />
+
+                RAYLANE <span id="italic">is where clarity meets style — for every face, every season, every day.</span>
+            </p>
+            <p id="quote">
+                See the world in style.
+            </p>
+
+        </div>
+
+        <div id="recommend">
+            <h4>Brand catalog</h4>
+            <div id="recommendRow"></div>
+        </div>
+
+        <div id="recommend1">
+            <div id="recommendRow1"></div>
+        </div>
+
+        <div style="height:10vh;"></div>
+    </main>
+    <!--main end-->
+
+    <!--footer start-->
+    <footer>
+        <div id="shadow"></div>
+        <div id="Info">
+            <div class="columns">
+                <p>EXPLORE<br>_____________</p>
+                <a href="Choice.html" class="linksInFooter">Shop It All</a>
+                <a href="MainHTML.html" class="linksInFooter">It's About Us</a>
+            </div>
+
+            <div class="columns">
+                <p>FOLLOW US<br>_________________</p>
+                <div id="icons">
+                    <a href="#"><img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+                            style="width: 2vw; margin-right: 3vh; vertical-align: middle;" /></a>
+                    <a href="#"><img
+                            src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png"
+                            style="width: 2vw; vertical-align: middle;" /></a>
+                </div>
+            </div>
+
+            <div class="columns">
+                <p>SUPPORT<br>_____________</p>
+                <a href="Contact.html" class="linksInFooter">Contact</a>
+                <a href="Terms.html" class="linksInFooter">Terms</a>
+                <a href="Privacy.html" class="linksInFooter">Privacy</a>
+                <a href="Returns.html" class="linksInFooter">Returns</a>
+            </div>
+
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <script>
+        const recommendContainer = document.getElementById("recommendRow");
+        let recImages = [
+            "photos/br1.jpg",
+            "photos/image 32.jpg",
+            "photos/image 29.jpg",
+            "photos/br.jpg",
+            "photos/3-002.jpg",
+            "photos/image 27.jpg",
+            "photos/image 34.jpg",
+            "photos/image 31.jpg ",
+            "photos/image 28.jpg",
+            "photos/image 37.jpg",
+            "photos/image 36.jpg",
+            "photos/br2.jpg"
+        ];
+
+        recImages = recImages.concat(recImages);
+
+        recImages.forEach(itemData => {
+            const item = document.createElement("div");
+            item.className = "recommendItem";
+
+            item.innerHTML = `<img src="${itemData}">`;
+            recommendContainer.appendChild(item);
+        });
+
+        let scrollSpeed = 1;
+        setInterval(() => {
+            recommendContainer.scrollLeft += scrollSpeed;
+            if (recommendContainer.scrollLeft >= recommendContainer.scrollWidth / 2) {
+                recommendContainer.scrollLeft = 0;
+            }
+        }, 5);
+
+
+
+
+
+        const recommendContainer1 = document.getElementById("recommendRow1");
+        let recImages1 = [
+            "photos/image 17.png",
+            "photos/image 18.png",
+            "photos/image 20.png",
+            "photos/image 19.png",
+            "photos/image 21.png",
+            "photos/image 22.png",
+            "photos/image 23.png",
+            "photos/image 24.png ",
+            "photos/image 25.png",
+            "photos/image 26.png",
+            "photos/image 38.png",
+            "photos/image 40.png"
+        ];
+
+        recImages1 = recImages1.concat(recImages1);
+
+        recImages1.forEach(itemData => {
+            const item1 = document.createElement("div");
+            item1.className = "recommendItem1";
+
+            item1.innerHTML = `<img src="${itemData}">`;
+            recommendContainer1.appendChild(item1);
+        });
+
+        let scrollSpeed1 = 1;
+        setInterval(() => {
+            recommendContainer1.scrollLeft -= scrollSpeed1;
+
+            if (recommendContainer1.scrollLeft <= 0) {
+                recommendContainer1.scrollLeft = recommendContainer1.scrollWidth / 2;
+            }
+        }, 30);
+    </script>
+
+</body>
+
+</html>

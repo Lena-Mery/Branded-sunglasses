@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>RAYLANE</title>
+    <link href="CartStyleSheet.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <a id="pInMenu" href="MainHTML.html" style="padding:2vh; text-decoration: none;">RAYLANE</a>
+            <div id="linksInMenu">
+                <a class="linkM" href="Women's glasses.html">WOMEN'S SUNGLASSES</a>
+                <a class="linkM" href="Men's glasses.html">MEN'S SUNGLASSES</a>
+                <a class="linkMm" href="Cart.html">
+                    <img src="photos/telega.png" alt="cart"
+                         style="width: 3%; min-width:30px;" />
+                </a>
+            </div>
+        </div>
+        <div class="shadowH"></div>
+    </header>
+
+
+    <main>
+        <div id="main">
+            <div id="white">
+                <p>Your cart is empty.</p>
+            </div>
+            <a href="Choice.html"><img id="imgCart" src="photos/telegaWithoutShadow.png" alt="cart"></a>
+            <div id="black">
+                <p>continue browsing</p>
+            </div>
+        </div>
+    </main>
+<!--ДОБАВИЛА ДИВ КОНТЕЙНЕР, ИТОГОВУЮ СТОИМОСТЬ, КНОПКУ ОФОРМИТЬ ЗАКАЗ-->
+    <div id="cart-page">
+
+        <!-- Левая колонка: товары -->
+        <div id="cart-container"></div>
+
+        <!-- Правая колонка: итоги -->
+        <div id="info-container">
+            <h2 class="subtotal-title">Subtotal</h2>
+            <p id="total-price"></p>
+            <a href="OrderForm.html" id="checkout-btn">CHECKOUT</a>
+        </div>
+
+    </div>
+
+<!--ДОСЮДА-->
+    <footer>
+        <div class="shadowF"></div>
+
+        <div id="Info">
+            <div class="columns">
+                <p>EXPLORE<br>_____________</p>
+                <a href="Choice.html" class="linksInFooter">Shop It All</a>
+                <a href="MainHTML.html" class="linksInFooter">It's About Us</a>
+            </div>
+
+            <div class="columns">
+                <p>FOLLOW US<br>_________________</p>
+                <div id="icons">
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+                             style="width: 2vw; margin-right: 3vh; vertical-align: middle;" />
+                    </a>
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png"
+                             style="width: 2vw; vertical-align: middle;" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="columns">
+                <p>SUPPORT<br>_____________</p>
+                <a href="Contact.html" class="linksInFooter">Contact</a>
+                <a href="Terms.html" class="linksInFooter">Terms</a>
+                <a href="Privacy.html" class="linksInFooter">Privacy</a>
+                <a href="Returns.html" class="linksInFooter">Returns</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!--ДОБАВИЛА ССЫЛКУ НА СКРИПТ ДЛЯ КОРЗИНЫ И ВЫЗОВ ФУНКЦИИ renderCart(); -->
+    <script src="main.js"></script>
+    <script>
+        renderCart();
+    </script>
+</body>
+</html>

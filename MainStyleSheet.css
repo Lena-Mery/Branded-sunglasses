@@ -1,0 +1,314 @@
+﻿@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13,13,13);
+}
+/*header start*/
+header {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linksInMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+
+.linkM {
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    font-family: Satoshi-Black;
+    color: white;
+    margin-left: 3%;
+}
+#shadow{
+    background-color: rgba(255, 255, 255, 0.7);
+    height:0.5vh;
+}
+/*header end*/
+h1{
+    font-family: Satoshi-Black;
+    text-align:center;
+    color: white;
+    font-size: clamp(10px, 15vw, 200px);
+    position: absolute;
+    margin: 0;
+}
+#cover{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#pInCover {
+    color: white;
+    font-family: Satoshi-Light;
+    font-size: clamp(2px, 3vw, 60px);
+    position: absolute;
+    text-align:center;
+    margin-top: 25%;
+}
+#Page2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: Satoshi-Black;
+    color: white;
+    font-size: clamp(7px, 5vw, 80px);
+    text-align: right;
+    position: absolute;
+    top: 13%;
+}
+.boldWorldInText {
+    font-family: AvenirNext-Heavy;
+    color: white;
+}
+#pInPage2 {
+    color: white;
+    font-family: AvenirNext-Light;
+    font-size: clamp(2px, 2vw, 40px);
+    position: absolute;
+    text-align: left;
+    margin-top: 18%;
+}
+#imagesFeed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+}
+
+.imgsInFeed {
+    width: 30%;
+    margin: 1%;
+    transition: transform 0.25s ease;
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+.imgsInFeed:hover{
+    transform: scale(1.09);
+}
+
+#AboutUs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+h3 {
+    font-family: Satoshi-Black;
+    color: white;
+    font-size: clamp(7px, 5vw, 80px);
+    text-align: left;
+    position: absolute;
+    top: 7%;
+    margin-left: 25%;
+}
+#pInAboutUs {
+    color: white;
+    font-family: AvenirNext-Light;
+    font-size: clamp(1px, 1vw, 25px);
+    position: absolute;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+#quote {
+    font-family: AvenirNext-LightItalic;
+    color: white;
+    font-size: clamp(1px, 2vw, 25px);
+    font-weight: 800;
+    margin-right: 30%;
+    position: absolute;
+    text-align: right;
+    margin-top: 35%;
+    margin-left: 60%;
+    white-space: nowrap;
+}
+#italic {
+    font-family: AvenirNext-LightItalic;
+    color: white;
+}
+h4 {
+    font-family: Satoshi-Black;
+    color: white;
+    font-size: clamp(7px, 5vw, 80px);
+    text-align: left;
+    margin-left: 4.7%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#BrandsFeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+#LogosFeed {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    padding: 1vh;
+    gap: 15%;
+}
+
+.imgsInBrandsFeed{
+    width: 30%;
+}
+/*footer start*/
+#Info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 1%;
+}
+.columns{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: AvenirNext-Light;
+    margin: 0% 10%;
+    white-space: nowrap;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    
+}
+.linksInFooter{
+    text-decoration: none;
+    color: white;
+}
+/*footer end*/
+#recommendRow {
+    display: flex;
+    gap: 25vw;
+    overflow: hidden;
+    padding-bottom: 2%;
+    scroll-behavior: smooth;
+}
+
+.recommendItem {
+    display: inline-block;
+    width: 4vh;
+    
+}
+
+#recommend1{
+    background-color: white;
+}
+
+#recommendRow1 {
+    display: flex;
+    gap: 20vw;
+    overflow-x: scroll; /* ← ДОЛЖНО БЫТЬ */
+    overflow-y: hidden;
+    scrollbar-width: none; /* убрать полосу Firefox */
+}
+    #recommendRow1::-webkit-scrollbar {
+        display: none; /* убрать полосу Chrome */
+    }
+
+.recommendItem1 {
+    display: inline-block;
+    width: 1vh;
+}
+.recommendItem img {
+    width: 25vw;
+}
+.recommendItem1 img {
+    width: 6vw;
+}
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}

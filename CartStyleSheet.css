@@ -1,0 +1,294 @@
+﻿/* ===== FONTS ===== */
+@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: 'MyFont', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-top: 12vw;
+    background-color: rgb(13,13,13);
+    color: white;
+}
+
+/* ===== EMPTY CART ===== */
+#white {
+    width: 100%;
+    height: 50dvh;
+    background-color: white;
+    color: rgb(13, 13, 13);
+    font-family: Satoshi-Black;
+    font-size: clamp(2px, 5vw, 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgCart {
+    width: 15vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50dvh;
+    transform: translate(-50%, -50%);
+}
+
+    #imgCart:hover {
+        box-shadow: 0 0 30px white;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+#black {
+    width: 100%;
+    height: 50dvh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Satoshi-Black;
+    font-size: clamp(2px, 5vw, 30px);
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linksInMenu {
+    display: flex;
+    margin-right: 3%;
+}
+
+.linkM {
+    margin-left: 3%;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+}
+
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    margin-left: 3%;
+    font-family: Satoshi-Black;
+    color: white;
+}
+
+.shadowH,
+.shadowF {
+    height: 0.5vh;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*footer*/
+#Info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 1%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    white-space: nowrap;
+    font-family: AvenirNext-Light;
+}
+
+#icons {
+    display: flex;
+}
+
+.linksInFooter {
+    color: white;
+    text-decoration: none;
+}
+
+/* СТРАНИЦА КОРЗИНЫ */
+#cart-page {
+    display: flex;
+    gap: 5vw;
+    padding: 5vw;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#cart-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+#info-container {
+    flex: 1;
+    padding: 2.5vw;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+    background-color: rgb(13,13,13);
+    position: sticky;
+    top: 15vw;
+}
+.subtotal-title {
+    font-family: Satoshi-Black;
+    font-size: 1.6vw;
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+
+}
+
+.totalPrice {
+    font-family: Satoshi-Black;
+    font-size: 1.5vw;
+    text-align: right;
+/*    margin-bottom: 3vw;*/
+}
+
+#checkout-btn {
+    width: 100%;
+    padding: 1em;
+    border-radius: 6px;
+    font-family: Satoshi-Black;
+    font-size: 1vw;
+    background-color: white;
+    color: rgb(13,13,13);
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+    #checkout-btn:hover {
+        box-shadow: 0 0 20px rgba(255,255,255,0.6);
+        transform: translateY(-1px);
+    }
+
+/* ЭЛЕМЕНТЫ КОРЗИНЫ */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 8px;
+    background-color: rgb(13,13,13);
+}
+
+.cart-img {
+    width: 8vw;
+    min-width: 80px;
+    border-radius: 6px;
+}
+
+.cart-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+
+.cart-name {
+    margin: 0;
+    font-family: Satoshi-Black;
+    font-size: 1.2vw;
+}
+
+.cart-count {
+    font-family: AvenirNext-Light;
+    font-size: 1vw;
+    opacity: 0.8;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1vw;
+}
+
+.cart-price {
+    font-family: AvenirNext-Medium;
+    font-size: 1.2vw;
+}
+
+/* Remove кнопка */
+.removeBtnDinamic {
+    padding: 0.6em 1em;
+    height: 2vw;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: rgb(13,13,13);
+    color: white;
+    font-family: AvenirNext-Medium;
+    font-size: 0.8vw;
+}
+
+    .removeBtnDinamic:hover {
+        box-shadow: 0 0 10px white;
+    }

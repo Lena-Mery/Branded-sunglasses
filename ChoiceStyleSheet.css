@@ -1,0 +1,187 @@
+﻿@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNext-Bold';
+    src: url('fonts/Avenir Next W1G Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*Satoshi (WOFF2)*/
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13,13,13);
+    color: white;
+}
+header {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header, footer {
+    box-shadow: 0 0.5vh 0 rgba(255,255,255,0.7);
+}
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+#linksInMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+
+.linkM {
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    font-family: Satoshi-Black;
+    color: white;
+    margin-left: 3%;
+}
+
+.shadow {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 5px;
+}
+
+#Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(13,13,13);
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: AvenirNext-Light;
+    margin: 0% 10%;
+    white-space: nowrap;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.linksInFooter {
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+/*    display: block;
+    margin-top: 20px;*/
+}
+h1 {
+    font-family: AvenirNext-Bold;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: clamp(24px, 5vw, 70px);
+    line-height: 1.1;
+}
+#divBtns {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    text-align: center;
+    
+}
+.btns {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 3px solid white;
+    border-radius: 7px;
+    padding: 5%;
+    color: white;
+    font-family: AvenirNext-Medium;
+    display: inline-block;
+    width: 100%;
+    font-size: 150%;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+#main {
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}

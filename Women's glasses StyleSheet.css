@@ -1,0 +1,349 @@
+﻿/*header start*/
+@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13,13,13);
+   
+    
+}
+header {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#linksInMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+
+}
+.linkM {
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    font-family: Satoshi-Black;
+    color: white;
+    margin-left: 3%;
+}
+/*header end*/
+#shadow {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 0.5vh;
+}
+/*footer start*/
+footer {
+    margin-top: 100px;
+}
+#Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: AvenirNext-Light;
+    margin: 0% 10%;
+    white-space: nowrap;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.linksInFooter {
+    text-decoration: none;
+    color: white;
+}
+/*footer end*/
+
+/*main start*/
+#gride{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+h1 {
+    font-family: Satoshi-Black;
+    color: white;
+    font-size: clamp(7px, 5vw, 80px);
+    text-align: left;
+    margin-left: 10%;
+}
+#threebtn {
+    margin-right: 8%;
+}
+#mainDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 0 10%;
+    gap: 7%;
+    /*    align-items: stretch;*/
+}
+#mainDiv.two-in-row .elements{
+    flex: 0 0 calc(40% - 7%);
+}
+#mainDiv.three-in-row .elements{
+    flex: 0 0 calc(33.33% - 7%);
+}
+#mainDiv.four-in-row .elements{
+    flex: 0 0 calc(25% - 7%);
+}
+.elements {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/5);
+/*    height:65vh;*/
+    color: inherit;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.brandNamePrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+/*    font-size: clamp(2px, 2vw, 30px);*/
+    /*    width: 100%;*/
+}
+.name {
+    text-align: left;
+    color: white;
+    font-family: AvenirNext-Light;
+    font-size: clamp(3px, 2vw, 30px);
+}
+.price {
+    text-align: right;
+    color: white;
+    font-family: AvenirNext-Light;
+    font-size: clamp(3px, 2vw, 30px);
+}
+.img{
+    border-radius: 7px;
+    width: 100%;
+}
+#i1:hover{
+    content: url("photos/1-01.jpg");
+}
+#i2:hover {
+    content: url("photos/1-001.jpg");
+}
+#i3:hover {
+    content: url("photos/2-01.jpg");
+}
+#i4:hover {
+    content: url("photos/3-001.jpg");
+}
+#i5:hover {
+    content: url("photos/3-02-01.jpg");
+}
+#i6:hover {
+    content: url("photos/4-01.jpg");
+}
+#i7:hover {
+    content: url("photos/5-02.jpg");
+}
+#i8:hover {
+    content: url("photos/6-02.jpg");
+}
+#i9:hover {
+    content: url("photos/10-02.jpg");
+}
+#i10:hover {
+    content: url("photos/12-01.jpg");
+}
+#i11:hover {
+    content: url("photos/9-01.jpg");
+}
+#i12:hover {
+    content: url("photos/8-01.jpg");
+}
+#i13:hover {
+    content: url("photos/7-01.jpg");
+}
+#colors{
+    display: flex;
+    gap: 0.5vw;
+    position: absolute; 
+    right:4%;
+    bottom:4%;
+}
+#gold{
+    width:0.5vw;
+    height:0.5vw;
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+#silver {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+#brown {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: saddlebrown;
+    border-radius: 50%;
+}
+#black {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: black;
+    border-radius: 50%;
+}
+#red {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: darkred;
+    border-radius: 50%;
+}
+#blue {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+#green {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: darkolivegreen;
+    border-radius: 50%;
+}
+#purple {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+#pink {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+a {
+    display: block;
+}
+
+#imgAndpan{
+    position: relative;
+}
+
+button{
+    background: none;
+    border: none;
+    margin: 0;
+    padding:0;
+}
+
+.choiceBtns{
+    width: 1vw;
+    min-width: 30px;
+    margin-right: 3vw;
+}
+
+#videoDiv {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* или 70vh — регулируешь высоту */
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* чтобы текст был поверх */
+}
+
+#videoText {
+    position: absolute;
+    top: 50%; /* вертикальное центрирование */
+    left: 50%; /* горизонтальное центрирование */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Satoshi-Black';
+    font-size: clamp(20px, 5vw, 60px);
+    text-align: center;
+}

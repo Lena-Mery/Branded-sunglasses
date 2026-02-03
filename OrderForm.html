@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>RAYLANE</title>
+    <link href="OrderFormStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <a id="pInMenu" href="MainHTML.html" style="padding:2vh; text-decoration: none;">RAYLANE</a>
+            <div id="linksInMenu">
+                <a class="linkM" href="Women's glasses.html">WOMEN'S SUNGLASSES</a>
+                <a class="linkM" href="Men's glasses.html">MEN'S SUNGLASSES</a>
+                <a class="linkMm" href="Cart.html">
+                    <img src="photos/telega.png" alt="cart"
+                         style="width: 3%; min-width:30px;" />
+                </a>
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </header>
+
+    <main class="checkout">
+
+        <!-- ЛЕВАЯ КОЛОНКА -->
+        <section class="checkout-form">
+
+            <h2 class="checkout-title">Contact</h2>
+
+            <input type="email" class="input" placeholder="Email">
+            <label class="checkbox-row">
+                <input type="checkbox">
+                <span>Email me with news and offers</span>
+            </label>
+
+            <h2 class="checkout-title">Delivery</h2>
+
+            <input list="country-options" class="input" placeholder="Country / Region">
+            <datalist id="country-options">
+                <option value="United States">
+                <option value="Canada">
+                <option value="United Kingdom">
+                <option value="France">
+                <option value="Germany">
+            </datalist>
+
+            <div class="input-row">
+                <input type="text" class="input" placeholder="First name">
+                <input type="text" class="input" placeholder="Last name">
+            </div>
+
+            <input type="text" class="input" placeholder="Address">
+            <input type="text" class="input" placeholder="Apartment, suite (optional)">
+
+            <div class="input-row">
+                <input type="text" class="input" placeholder="City">
+                <input type="text" class="input" placeholder="Postal code">
+            </div>
+
+            <input type="text" class="input" placeholder="Phone">
+
+            <label class="checkbox-row">
+                <input type="checkbox">
+                <span>Save this information for next time</span>
+            </label>
+
+        </section>
+
+        <!--ПРАВАЯ КОЛОНКА-->
+        <section class="checkout-form">
+
+            <h2 class="checkout-title">Payment</h2>
+            <p class="checkout-note">All transactions are secure and encrypted.</p>
+
+            <p class="payment-method">Credit card</p>
+            <img src="photos/credit-cards.png" class="cards-img" alt="cards">
+
+            <input type="text" class="input" placeholder="Card number">
+
+            <div class="input-row">
+                <input type="text" class="input" placeholder="MM / YY">
+                <input type="text" class="input" placeholder="CVC">
+            </div>
+
+            <a href="#" class="checkout-btn">Complete order</a>
+
+        </section>
+
+    </main>
+    
+    <footer>
+        <div id="shadow"></div>
+        <div id="Info">
+            <div class="columns">
+                <p>EXPLORE<br>_____________</p>
+                <a href="Choice.html" class="linksInFooter">Shop It All</a>
+                <a href="MainHTML.html" class="linksInFooter">It's About Us</a>
+            </div>
+
+            <div class="columns">
+                <p>FOLLOW US<br>_________________</p>
+                <div id="icons">
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png"
+                             style="width: 2vw; margin-right: 3vh; vertical-align: middle;" />
+                    </a>
+                    <a href="#">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png"
+                             style="width: 2vw; vertical-align: middle;" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="columns">
+                <p>SUPPORT<br>_____________</p>
+                <a href="Contact.html" class="linksInFooter">Contact</a>
+                <a href="Terms.html" class="linksInFooter">Terms</a>
+                <a href="Privacy.html" class="linksInFooter">Privacy</a>
+                <a href="Returns.html" class="linksInFooter">Returns</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

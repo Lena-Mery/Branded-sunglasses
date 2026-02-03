@@ -1,0 +1,250 @@
+﻿@font-face {
+    font-family: 'AvenirNext-Heavy';
+    src: url('fonts/Avenir Next W1G Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-LightItalic';
+    src: url('fonts/Avenir Next W1G Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Light';
+    src: url('fonts/Avenir Next W1G Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Medium';
+    src: url('fonts/Avenir Next W1G Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-Bold';
+    src: url('fonts/Avenir Next W1G Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url('fonts/Satoshi-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('fonts/Satoshi-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'MyFont', sans-serif;
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13,13,13);
+    color: white;
+}
+/* ===== CHECKOUT ===== */
+
+.checkout {
+    padding-top: 14vh;
+    padding-bottom: 12vh;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    background-color: rgb(13,13,13);
+}
+
+/* ===== FORM BLOCK ===== */
+
+.checkout-form {
+    width: 32vw;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    color: white;
+    font-family: AvenirNext-Light;
+}
+
+/* Titles */
+.checkout-title {
+    font-family: Satoshi-Black;
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+}
+
+/* Note */
+.checkout-note {
+    font-size: 0.8vw;
+    opacity: 0.6;
+    margin-top: -0.6vw;
+}
+
+/* Payment text */
+.payment-method {
+    font-size: 0.9vw;
+    opacity: 0.8;
+}
+
+/* ===== INPUTS ===== */
+
+.input {
+    padding: 0.9vw 1vw;
+    background: transparent;
+    border: 1px solid rgb(255,255,255);
+    border-radius: 6px;
+    color: white;
+    font-family: AvenirNext-Light;
+    font-size: 0.9vw;
+}
+
+    .input::placeholder {
+        color: rgba(255,255,255,0.5);
+    }
+
+    .input:focus {
+        outline: none;
+        border-color: white;
+    }
+
+/* ===== ROWS ===== */
+
+.input-row {
+    display: flex;
+    gap: 1vw;
+}
+
+/* ===== CHECKBOX ===== */
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    font-size: 0.85vw;
+    opacity: 0.8;
+}
+
+    .checkbox-row input {
+        accent-color: white;
+    }
+
+/* ===== BUTTON ===== */
+
+.checkout-btn {
+    margin-top: 2vw;
+    text-align: center;
+    padding: 1vw;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Black;
+    transition: 0.3s ease;
+}
+
+    .checkout-btn:hover {
+        background-color: white;
+        color: rgb(13,13,13);
+    }
+
+/* ===== CARDS IMAGE ===== */
+
+.cards-img {
+    width: 12vw;
+    opacity: 0.9;
+}
+
+
+/*header start*/
+header {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu {
+    background-color: rgb(13,13,13);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linksInMenu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+
+.linkM {
+    color: white;
+    text-decoration: none;
+    font-family: Satoshi-Light;
+    white-space: nowrap;
+    margin-left: 3%;
+}
+
+.linkMm {
+    margin-left: 3%;
+    width: 10vw;
+}
+
+#pInMenu {
+    font-family: Satoshi-Black;
+    color: white;
+    margin-left: 3%;
+}
+
+#shadow {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 0.5vh;
+}
+/*header end*/
+
+/*footer start*/
+#Info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 1%;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: AvenirNext-Light;
+    margin: 0% 10%;
+    white-space: nowrap;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.linksInFooter {
+    text-decoration: none;
+    color: white;
+}
+/*footer end*/
